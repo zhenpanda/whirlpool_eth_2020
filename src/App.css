@@ -3,9 +3,9 @@ body {
 }
 .App {
   text-align: center;
-  height: 97vh;
+  height: 90vh;
   padding-top: 1em;
-  padding-bottom: 3em;
+  padding-bottom: 1em;
 }
 
 .main-content-area {
@@ -59,4 +59,5 @@ body {
 .ui-box-img {
   margin-top: 1em;
   width: 50em;
+  cursor: pointer;
 }

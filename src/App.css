@@ -1,0 +1,62 @@
+body {
+  background: #f8edd7;
+}
+.App {
+  text-align: center;
+  height: 97vh;
+  padding-top: 1em;
+  padding-bottom: 3em;
+}
+
+.main-content-area {
+  padding-top: 1em;
+  width: 80em;
+  height: 55em;
+  margin-left: auto;
+  margin-right: auto;
+  background: #f1d2cf;
+  border: 0.3em solid #aaa498;
+  border-radius: 0.5em;
+}
+
+@font-face { 
+  font-family: "Oxanium-Regular"; 
+  src: url('./fonts/Oxanium-Regular.ttf'); 
+} 
+
+.grid-container {
+  display: grid;
+  grid-row-gap: 1px;
+  grid-template-columns: auto auto;
+  padding: 10px;
+  padding-top: 20px;
+}
+.grid-item {
+  text-align: center;
+  height: 2.75em;
+}
+.grid-item-small {
+  width: 3em;
+}
+.main-title-text {
+  font-size: 30pt;
+  font-weight: 600;
+  font-family: "Oxanium-Regular"; 
+  color: #202a4b;
+  border: 0.1em solid #202a4b;
+  border-radius: 0.5em;
+  width: 12em;
+  margin: auto;
+  padding-bottom: 0em;
+  display: inline-block;
+}
+
+.logo-img {
+  width: 100%;
+  margin: auto;
+  display: inline-block;
+}
+.ui-box-img {
+  margin-top: 1em;
+  width: 50em;
+}

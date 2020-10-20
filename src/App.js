@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Swal from 'sweetalert2';
 
-import logo from './imgs/pool_icon.png';
+import logo from './imgs/pool_icon2.png';
 import uiBox from './imgs/ui_cropped.png';
 import uiBox2 from './imgs/ui_cropped_2.png';
 import uiBox3 from './imgs/ui_cropped_3.png';

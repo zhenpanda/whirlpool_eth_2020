@@ -13,7 +13,7 @@ pragma solidity 0.5.17;
 
 import "./Tornado.sol";
 
-contract ERC20Tornado is Tornado {
+contract PoolTornado is Tornado {
   address public token;
 
   constructor(
@@ -28,13 +28,13 @@ contract ERC20Tornado is Tornado {
 
   function _processDeposit() internal {
     require(msg.value == 0, "ETH value is supposed to be 0 for ERC20 instance");
-    _safeErc20TransferFrom(msg.sender, address(this), denomination);
+    // _safeErc20TransferFrom(msg.sender, address(this), denomination);
   }
 
   function _processWithdraw(address payable _recipient, address payable _relayer, uint256 _fee, uint256 _refund) internal {
     require(msg.value == _refund, "Incorrect refund amount received by the contract");
 
-    _safeErc20Transfer(_recipient, denomination - _fee);
+    // _safeErc20Transfer(_recipient, denomination - _fee);
     if (_fee > 0) {
       _safeErc20Transfer(_relayer, _fee);
     }
